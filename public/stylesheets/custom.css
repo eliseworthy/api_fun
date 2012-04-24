@@ -2,21 +2,32 @@
 	width: 710px;
 }
 body {
-	background: #fff;
+	background-image: url('/images/fall.png');
 }
 
 header {
-	padding-top: 20px;
+	margin-top: 30px;
+	width: 270px;
+	padding-top: 10px;
+	background: #7E904A;
 }
 
-header img {
-	padding: none;
+header h1 {
+	color: #683E3E;
+	font-family: 'Fugaz One', cursive;
+	text-align: center;
+	font-size: 5em;
 }
+
 section {
-	margin-top: 5px;
 	font-size: 120%;
 	padding: 20px;
-	background: #ccffff;
+	background: #CED579;
+}
+
+h3 {
+	color: #683E3E;
+	font-family: 'Fugaz One', cursive;
 }
 
 /* Links */
@@ -40,8 +51,7 @@ nav {
 	float: right;
 	background: #fff;
 	padding: 0 0.7em;
-	white-space: nowrap;
-	
+	white-space: nowrap;	
 }
 
 nav ul {
@@ -79,12 +89,6 @@ a.signup_button {
 	
 }
 
-.round {
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border radius: 10px;
-}
-
 /* Footer */
 footer {
 	text-align: center;
@@ -95,5 +99,16 @@ footer {
 }
 
 footer nav {
+	background: #7E904A;
 	float: none;
+}
+
+footer nav a {
+	color: #683E3E;
+}
+
+.round {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border radius: 10px;
 }

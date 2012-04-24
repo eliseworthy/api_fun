@@ -1,2 +1,15 @@
-<h1>Home</h1>
-<p>sweet home</p>
+<h3>Weather Lookup</h3>
+<p> This is a simple API request using <a href="http://wunderground.com">Wunderground's</a> API. </p>
+<p> In Washington, DC it is <%= @washington_lookup.temperature %> degrees. (Updated at <%= @washington_lookup.date.strftime('%m/%d/%Y') %>)</p>
+<%= image_tag @washington_lookup.icon %>
+
+<h3>Check your weather!</h3>
+<%= form_tag(root_path) do %>
+  <%= text_field_tag :zip, "", placeholder: "enter zip" %>
+  <%= submit_tag "Find!" %>
+<% end %>
+
+<% @weather_lookups.each do |wl| %>
+<p> It is <%= wl.temperature %> degrees in <%= wl.zip %> (Updated at <%= wl.date.strftime('%m/%d/%Y') %>)</p>
+<%= image_tag wl.icon %>
+<% end %>
